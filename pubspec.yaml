@@ -13,13 +13,12 @@ dependencies:
     # hosted: "https://pub.dev"
   flutter:
     sdk: flutter
-dependency_overrides:
-  #extended_text_library:
-    # git: 
-    #   url: https://github.com/fluttercandies/extended_text_library.git
-    #   ref: refactor
-    #path: ../extended_text_library
-      
+dependency_overrides: 
+  extended_text_library:
+    git: 
+      url: https://github.com/NikitaVasin/extended_text_library.git
+      ref: master
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

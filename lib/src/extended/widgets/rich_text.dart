@@ -86,7 +86,10 @@ class ExtendedRichText extends _RichText {
   ) {
     int index = 0;
     final List<Widget> result = <Widget>[
-      ...WidgetSpan.extractFromInlineSpan(span, textScaleFactor)
+      ...WidgetSpan.extractFromInlineSpan(
+        span,
+        TextScaler.linear(textScaleFactor),
+      )
     ];
 
     if (overflowWidget != null) {
